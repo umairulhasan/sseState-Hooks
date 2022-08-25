@@ -8,10 +8,10 @@ function App() {
     //setCount(2)
   
   return (
-    <div>
+    <div className="box">
       <Message counter={count}/>
       <h3>Hello the value of count is : {count}</h3>
-      <button onClick={()=> setCount(++count)}>Update Counter</button>
+      <button className="daylight" onClick={()=> setCount(++count)}>Update Counter</button>
     </div>
   )}
 
