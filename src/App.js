@@ -2,11 +2,14 @@ import React, { useState } from "react";
 import "./App.css";
 
 function App() {
-  let [counter, setCounter] = useState(1);
-  setCounter(2);
+  let [count, setCount] = useState(0)
+
+    setCount(2)
+  
   return (
     <div>
-      <h1>Hello{counter}</h1>
+      <h3>Hello the value of count is : {count}</h3>
+      <button onClick={()=> setCount(++count)}>Update Counter</button>
     </div>
   )}
 
